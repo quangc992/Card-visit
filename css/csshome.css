@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    background-image: url(./background.jpg);
 }
 
 
@@ -18,8 +19,8 @@ body{
     /* background-color: rgb(170, 170, 170); */
     width: auto;
     height: auto;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 13px;
+    margin-right: 13px;
 
 
     /* text-align: center; */
@@ -88,6 +89,21 @@ body{
     color: white;
 }
 
+.color-fonta :active{
+    font-size: 16px;
+    color: rgb(124, 124, 124);
+}
+
+.color-fonta :hover{
+    font-size: 16px;
+    color: rgb(223, 215, 215);
+    text-decoration: none;
+}
+
 .element-image div h4{
     color: whitesmoke;
 }
+
+/* .color-fonta{
+    display: none;
+} */

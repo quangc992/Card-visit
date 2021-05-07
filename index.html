@@ -11,16 +11,26 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <script src="jquery-3.5.1.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> 
+        <!-- lưu bảng tạm -->
+        
     </head>
 
     <body>
         <div class="head-main ">
-            <img class="avt" src="./css/avt.jpg" height="130px">
-            <h1><b>Ngô Văn Quang</b></h1>
+            <img  class="avt" src="./css/avt.jpg" height="130px">
+            <h1 style="color:aliceblue; padding-bottom: 0px;padding-top: 13px;"><b>Ngô Văn Quang</b></h1>
+            <div style="padding-bottom: 10px;">
+                <form>
+                    <input id="textKey" type="text" value="" placeholder="Nhập Key tại đây..." >
+                    <input id="submitKey" type="submit">
+                </form>
+            </div>
         </div>
         <div class="main-home ">
 
-            
                 <div class="element-image color-fb">
                     <div class="col-2"></div>
                     <div class="col-3">
@@ -28,7 +38,9 @@
                     </div>
                     <div class="col-5 tl-prf-item ">
                         <h4 class=" ">Facebook</h4>
-                        <a  class="color-font" href="https://www.facebook.com/QuangC.FB/">Fb/QuangC.FB/</a>
+                        <div class="color-fonta">
+                            <a  class="color-font" href="https://www.facebook.com/QuangC.FB/">Fb/QuangC.FB/</a>
+                        </div>
                     </div>
                 </div>
 
@@ -39,7 +51,9 @@
                     </div>
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">Instagram</h4>
-                        <a class="color-fonta" href="https://www.instagram.com/nv_quangc/">Instagram/nv_quangc/</a>
+                        <div class="color-fonta">
+                            <a class="color-fonta" href="https://www.instagram.com/nv_quangc/">Instagram/nv_quangc/</a>
+                        </div>
                     </div>
                 </div>
 
@@ -50,7 +64,9 @@
                     </div>
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">GitHub</h4>
-                        <a class="color-fonta" href="#">GitHub.com</a>
+                        <div class="color-fonta">
+                            <a id="alertError" class="color-fonta" href="#">GitHub.com</a>
+                        </div>
                     </div>
                 </div>
 
@@ -61,7 +77,9 @@
                     </div>
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">WebSite</h4>
-                        <a class="color-fonta" href="#">Đang cập nhật ...</a>
+                        <div class="color-fonta">
+                            <a id="alertErrorWeb" class="color-fonta" href="#">GitHub.com</a>
+                        </div>
                     </div>
                 </div>
 
@@ -72,12 +90,15 @@
                     </div>
                     <div class="col-5 tl-prf-item">
                         <h4 class="">My Phone</h4>
-                        <a class="color-fonta" href="#">079 666 1183</a><br><br>
-                        <a class="color-fonta" href="#">0522 090920</a>
+                        <div class="color-fonta">
+                            <a class="color-fonta" href="tel:0796661183">+84 79 666 1183</a><br><br>
+                        </div>
+                        <div class="color-fonta">
+                            <a id="alertErrorPhone" class="color-fonta" >+84 *** 090920</a>
+                        </div>
                     </div>
                 </div>
-                  
-            
+                <script src="./js/main.js"></script>
         </div>
     </body>
 </html>	
