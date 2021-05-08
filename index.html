@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Information</title>
         <link href="./css/csshome.css" rel="stylesheet">
+        <link href="./css/key.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,14 +20,24 @@
     </head>
 
     <body>
+        <!-- thông báo nhập key -->
+        <div id="dialog">
+            <section>
+                <dialog>
+                    <h4 class="title-dialog">Thông báo</h4>
+                    <p>Link liên kết này ở dạng public nên vui lòng nhập key có sẵn để xem tất cả các thông tin. Xin lỗi vì bất tiện này.</p>
+                    <button id="close-dialog">Đóng</button>
+                </dialog>
+            </section>
+        </div>
+
         <div class="head-main ">
             <img  class="avt" src="./css/avt.jpg" height="130px">
             <h1 style="color:aliceblue; padding-bottom: 0px;padding-top: 13px;"><b>Ngô Văn Quang</b></h1>
-            <div style="padding-bottom: 10px;">
-                <form>
-                    <input id="textKey" type="text" value="" placeholder="Nhập Key tại đây..." >
-                    <input id="submitKey" type="submit">
-                </form>
+            <div id="fmKey" style="padding-bottom: 10px;">
+                <input id="textK" name="textK" type="text" placeholder="Nhập Key tại đây..." >
+                <input id="submitK"  name="submit" type="submit" value="Gửi"><br>
+                <b id="textErK" style="color: red;"></b>
             </div>
         </div>
         <div class="main-home ">
@@ -78,7 +89,16 @@
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">WebSite</h4>
                         <div class="color-fonta">
-                            <a id="alertErrorWeb" class="color-fonta" href="#">GitHub.com</a>
+                            <a id="alertErrorWeb" class="color-fonta" href="#">BlogQC.com</a>
+                            <div id="dialog-alert">
+                                <section>
+                                    <dialog>
+                                        <h4>Bảo trì & cập nhật</h4>
+                                        <p>Website đang trong quá trình hoàn thành nên chưa được công khai.</p>
+                                        <button id="close-dialog-Element">Đóng</button>
+                                    </dialog>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -98,7 +118,13 @@
                         </div>
                     </div>
                 </div>
-                <script src="./js/main.js"></script>
         </div>
+
+        
+
+       
+        
+        <script src="./js/main.js"></script>
+        <script src="./js/key.js"></script>
     </body>
 </html>	

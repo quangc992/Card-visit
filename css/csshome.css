@@ -21,6 +21,7 @@ body{
     height: auto;
     margin-left: 13px;
     margin-right: 13px;
+    padding-bottom: 25px;
 
 
     /* text-align: center; */
@@ -103,7 +104,3 @@ body{
 .element-image div h4{
     color: whitesmoke;
 }
-
-/* .color-fonta{
-    display: none;
-} */
