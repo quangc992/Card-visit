@@ -27,21 +27,11 @@
     padding-right: 10px;
 }
 
-
-
 .main-home{
-    z-index: 1;
-    /* opacity: 1; */
+    z-index: 5;
 }
 
-/* dialog*/
-
-
-#dialog{
-    background-color: rgb(189, 189, 181);
-    transform: scale(0);
-} 
-
+/* dialog key*/
 #close-dialog{ 
     border: #dc3545 solid 1px;
     border-radius: 5px;
@@ -52,6 +42,12 @@
     padding: 3px 10px 3px 10px;
 }
 
+#close-dialog:hover{
+    border: #dc3545 solid 1px;
+    background-color: #dc3545;
+    color: #ffffff;
+    transition: ease-in 0.3s;
+}
 
 .show-dialog-scale {
     visibility: visible;
@@ -59,6 +55,23 @@
     border: black solid 2px ;
     border-radius: 10px;
     padding: 15px 10px;
+    z-index: 20;
+}
+
+.show-dialog-scale{
+    /* transition */
+}
+
+.show-dialog-scale{
+    /* position:relative; */
+    /* left:0px; */
+    /* animation-name:move-top;
+    animation-duration:3s;
+    animation-iteration-count:1; */
+}
+@keyframes move-top{
+    0%{top:-1000px;}
+    100%{top:8px;}
 }
 .show-dialog-scale h4{
     border-bottom: black solid 1px;
@@ -66,3 +79,39 @@
     color: #dc3545;
 }
 
+
+/* show er-web */
+#close-dl-er-web{
+    border: #dc3545 solid 1px;
+    border-radius: 5px;
+    color: #dc3545;
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 3px 10px 3px 10px;
+}
+
+#close-dl-er-web:hover{
+    border: #dc3545 solid 1px;
+    background-color: #dc3545;
+    color: #ffffff;
+    transition: ease-in 0.3s;
+}
+
+/* show er-git */
+#close-dl-er-git{
+    border: #dc3545 solid 1px;
+    border-radius: 5px;
+    color: #dc3545;
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 3px 10px 3px 10px;
+}
+
+#close-dl-er-git:hover{
+    border: #dc3545 solid 1px;
+    background-color: #dc3545;
+    color: #ffffff;
+    transition: ease-in 0.3s;
+}

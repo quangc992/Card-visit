@@ -7,8 +7,8 @@ console.log("-------------------------------------");
 console.log("Ý tưởng : quét link qua mã QR hoặc giao tiếp qua NFC");
 
 
-showDiaLogmain();// show thông báo nhập key
-showDiaLogElement();
+showDiaLogmain();
+
 
 var linkK = $('.color-fonta')
 linkK.hide();
@@ -16,7 +16,7 @@ linkK.hide();
 function loadK(){ // check key
     let inputK = $('#textK').val();
     var inputK2 = $('#textK');
-    let key = "aa";
+    let key = "qc";
     let hideK = $('#fmKey');
     let textErK = $('#textErK');
 
@@ -33,7 +33,7 @@ function loadK(){ // check key
         // alert('Sai');
         $('#textK').val('');
         textErK.text('Key sai hoặc không tồn tại.');
-        console.log(textErK);
+        // console.log(textErK);
     }
 }
 
@@ -41,28 +41,9 @@ $('#submitK').click(function(){
     loadK(); // load key
 });
 
-//show dialog input key
+// show dialog input key
 function showDiaLogmain(){ 
-    let dialog = $('dialog'),
-    closeDL = $('close-dialog'),
-    transition;
-
-    dialog[0].showModal();
-    transition = window.setTimeout(function() {
-        dialog.addClass('show-dialog-scale');
-    }, 0.5);
-
-    $('#close-dialog').on('click', function() {
-        dialog[0].close();
-        closeDL.removeClass('show-dialog-scale');
-        clearTimeout(transition);
-    })
-}
-    
-
-//show dialog alert link
-function showDiaLogElement(){ 
-    let dialog = $('dialog'),
+    let dialog = $('#DLKey'),
     closeDL = $('close-dialog'),
     transition;
 
@@ -78,5 +59,51 @@ function showDiaLogElement(){
     })
 }
 
- 
+
+showDiaLogERweb();
+function showDiaLogERweb(){ 
+    let dialog = $('#DL-ER-Web'),
+    closeDL = $('close-dl-er-web'),
+    transition;
+
+    $('#alertErrorWeb').on('click', function() {
+        dialog[0].showModal();
+        transition = window.setTimeout(function(){
+            dialog.addClass('show-dialog-scale');
+        }, 0.5);
+    })
+
+    $('#close-dl-er-web').on('click', function() {
+        dialog[0].close();
+        closeDL.removeClass('show-dialog-scale');
+        clearTimeout(transition);
+    })
+}
+
+showDiaLogERGit();
+function showDiaLogERGit(){ 
+    let dialog = $('#DL-ER-Git'),
+    closeDL = $('close-dl-er-git'),
+    transition;
+
+    $('#alertErrorGit').on('click', function() {
+        dialog[0].showModal();
+        transition = window.setTimeout(function(){
+            dialog.addClass('show-dialog-scale');
+        }, 0.5);
+    })
+
+    $('#close-dl-er-git').on('click', function() {
+        dialog[0].close();
+        closeDL.removeClass('show-dialog-scale');
+        clearTimeout(transition);
+    })
+}
+
+
+
+
+
+
+
 })

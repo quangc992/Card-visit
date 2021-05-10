@@ -14,22 +14,23 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- <script src="jquery-3.5.1.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> 
-        <!-- lưu bảng tạm -->
         
     </head>
 
     <body>
+        
         <!-- thông báo nhập key -->
-        <div id="dialog">
+        <div style="transform: scale(0);" >
             <section>
-                <dialog>
-                    <h4 class="title-dialog">Thông báo</h4>
+                <dialog id="DLKey">
+                    <h4>Thông báo</h4>
                     <p>Link liên kết này ở dạng public nên vui lòng nhập key có sẵn để xem tất cả các thông tin. Xin lỗi vì bất tiện này.</p>
                     <button id="close-dialog">Đóng</button>
                 </dialog>
             </section>
         </div>
+
+
 
         <div class="head-main ">
             <img  class="avt" src="./css/avt.jpg" height="130px">
@@ -76,10 +77,11 @@
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">GitHub</h4>
                         <div class="color-fonta">
-                            <a id="alertError" class="color-fonta" href="#">GitHub.com</a>
+                            <a id="alertErrorGit" class="color-fonta" href="#">GitHub.com</a>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="element-image color-gg">
                     <div class="col-2"></div>
@@ -89,20 +91,11 @@
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">WebSite</h4>
                         <div class="color-fonta">
-                            <a id="alertErrorWeb" class="color-fonta" href="#">BlogQC.com</a>
-                            <div id="dialog-alert">
-                                <section>
-                                    <dialog>
-                                        <h4>Bảo trì & cập nhật</h4>
-                                        <p>Website đang trong quá trình hoàn thành nên chưa được công khai.</p>
-                                        <button id="close-dialog-Element">Đóng</button>
-                                    </dialog>
-                                </section>
-                            </div>
+                            <a id="alertErrorWeb" class="color-fonta" >BlogQC.com</a>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="element-image color-phone">
                     <div class="col-2"></div>
                     <div class="col-3">
@@ -120,8 +113,27 @@
                 </div>
         </div>
 
-        
+        <!--show dialog error web -->
+        <div style="transform: scale(0);" >
+            <section>
+                <dialog id="DL-ER-Web">
+                    <h4>Bảo trì & Nâng cấp</h4>
+                    <p>Trang web đang trong quá trình hoàn hoàn thiện.</p>
+                    <button id="close-dl-er-web">Đóng</button>
+                </dialog>
+            </section>
+        </div>
 
+        <!--show dialog error git -->
+        <div style="transform: scale(0);" >
+            <section>
+                <dialog id="DL-ER-Git">
+                    <h4>Private</h4>
+                    <p>Sẽ Public trong thời gian sớm nhất.</p>
+                    <button id="close-dl-er-git">Đóng</button>
+                </dialog>
+            </section>
+        </div>
        
         
         <script src="./js/main.js"></script>
