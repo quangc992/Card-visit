@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
 // showDiaLogmain();
+dialogKey();
 
 
 var linkK = $('.color-fonta')
@@ -94,10 +95,15 @@ $('#submitK').click(function(){
 //     })
 // }
 
+// modal.style.display = "block";
 
+function dialogKey(){
+    let close = document.getElementById("btn-close-dl-k");
+    let formDL = document.getElementById("DlKey");
 
-
-
-
+    close.onclick = function() {
+        formDL.style.display = "none";
+      }
+}
 
 })

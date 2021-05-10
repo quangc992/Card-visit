@@ -1,11 +1,35 @@
-// $("#alertError").click(function(){
-//     alert("Xin lỗi phần này chưa được cập nhật hoặc đang được hoàn thiện !")
-// });
 
-// $("#alertErrorWeb").click(function(){
-//     alert("Web chưa hoàn thành !")
-// })
+$(document).ready(function(){
 
-// $("#alertErrorPhone").click(function(){
-//     alert("Sorry số này không được public :>")
-// })
+    erWeb();
+    function erWeb(){
+        let close = document.getElementById("btn-close-er-web");
+        let formDL = document.getElementById("DL-ER-Web");
+        let link = document.getElementById("alertErrorWeb");
+    
+        link.onclick = function() {
+            formDL.style.display = "block";
+        }
+
+        close.onclick = function() {
+            formDL.style.display = "none";
+        }
+    }
+
+    erGit();
+    function erGit(){
+        let close = document.getElementById("btn-close-er-Git");
+        let formDL = document.getElementById("DL-ER-Git");
+        let link = document.getElementById("alertErrorGit");
+    
+        link.onclick = function() {
+            formDL.style.display = "block";
+        }
+
+        close.onclick = function() {
+            formDL.style.display = "none";
+        }
+    }
+
+    
+    })

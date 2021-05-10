@@ -29,12 +29,47 @@
                 </dialog>
             </section>
         </div> -->
-
-        <div class="DlKey">
+        <div id="DlKey">
             <div class="form-Dl-Key">
                 <h4>Thông báo</h4>
                 <p>Link liên kết này ở dạng public nên vui lòng nhập key có sẵn để xem tất cả các thông tin. Xin lỗi vì bất tiện này.</p>
-                <p></p><button class="btn-close-dl-k">Đóng</button>
+                <button id="btn-close-dl-k">Đóng</button>
+            </div>
+        </div>
+
+        <!--show dialog error web -->
+        <!-- <div style="transform: scale(0);" >
+            <section>
+                <dialog id="DL-ER-Web">
+                    <h4>Bảo trì & Nâng cấp</h4>
+                    <p>Trang web đang trong quá trình hoàn hoàn thiện.</p>
+                    <button id="close-dl-er-web">Đóng</button>
+                </dialog>
+            </section>
+        </div> -->
+        <div id="DL-ER-Web" style="display: none;">
+            <div class="form-er-Web">
+                <h4>Bảo trì & Nâng cấp</h4>
+                <p>Trang web đang trong quá trình hoàn hoàn thiện.</p>
+                <button id="btn-close-er-web">Đóng</button>
+            </div>
+        </div>
+
+        <!--show dialog error git -->
+        <!-- <div style="transform: scale(0);" >
+            <section>
+                <dialog id="DL-ER-Git">
+                    <h4>Private</h4>
+                    <p>Sẽ Public trong thời gian sớm nhất.</p>
+                    <button id="close-dl-er-git">Đóng</button>
+                </dialog>
+            </section>
+        </div> -->
+        <div id="DL-ER-Git" style="display: none;">
+            <div class="form-er-Git">
+                <h4>Private</h4>
+                <p>Sẽ Public trong thời gian sớm nhất.</p>
+                <button id="btn-close-er-Git">Đóng</button>
             </div>
         </div>
 
@@ -83,7 +118,7 @@
                     <div class="col-5 tl-prf-item">
                         <h4 class=" ">GitHub</h4>
                         <div class="color-fonta">
-                            <a id="alertErrorGit" class="color-fonta" href="#">GitHub.com</a>
+                            <a id="alertErrorGit" class="color-fonta" >GitHub.com/...</a>
                         </div>
                     </div>
                 </div>
@@ -119,27 +154,6 @@
                 </div>
         </div>
 
-        <!--show dialog error web -->
-        <!-- <div style="transform: scale(0);" >
-            <section>
-                <dialog id="DL-ER-Web">
-                    <h4>Bảo trì & Nâng cấp</h4>
-                    <p>Trang web đang trong quá trình hoàn hoàn thiện.</p>
-                    <button id="close-dl-er-web">Đóng</button>
-                </dialog>
-            </section>
-        </div> -->
-
-        <!--show dialog error git -->
-        <!-- <div style="transform: scale(0);" >
-            <section>
-                <dialog id="DL-ER-Git">
-                    <h4>Private</h4>
-                    <p>Sẽ Public trong thời gian sớm nhất.</p>
-                    <button id="close-dl-er-git">Đóng</button>
-                </dialog>
-            </section>
-        </div> -->
        
         
         <script src="./js/main.js"></script>
