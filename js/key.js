@@ -1,13 +1,7 @@
 $(document).ready(function(){
 
-console.log("Web info");
-console.log("Xử lý mã hóa đơn giản");
-console.log("Source full nếu cần thì liên hệ fb free");
-console.log("-------------------------------------");
-console.log("Ý tưởng : quét link qua mã QR hoặc giao tiếp qua NFC");
 
-
-showDiaLogmain();
+// showDiaLogmain();
 
 
 var linkK = $('.color-fonta')
@@ -42,63 +36,63 @@ $('#submitK').click(function(){
 });
 
 // show dialog input key
-function showDiaLogmain(){ 
-    let dialog = $('#DLKey'),
-    closeDL = $('close-dialog'),
-    transition;
+// function showDiaLogmain(){ 
+//     let dialog = $('#DLKey'),
+//     closeDL = $('close-dialog'),
+//     transition;
 
-    dialog[0].showModal();
-    transition = window.setTimeout(function() {
-        dialog.addClass('show-dialog-scale');
-    }, 0.5);
+//     dialog[0].showModal();
+//     transition = window.setTimeout(function() {
+//         dialog.addClass('show-dialog-scale');
+//     }, 0.5);
 
-    $('#close-dialog').on('click', function() {
-        dialog[0].close();
-        closeDL.removeClass('show-dialog-scale');
-        clearTimeout(transition);
-    })
-}
+//     $('#close-dialog').on('click', function() {
+//         dialog[0].close();
+//         closeDL.removeClass('show-dialog-scale');
+//         clearTimeout(transition);
+//     })
+// }
 
 
-showDiaLogERweb();
-function showDiaLogERweb(){ 
-    let dialog = $('#DL-ER-Web'),
-    closeDL = $('close-dl-er-web'),
-    transition;
+// showDiaLogERweb();
+// function showDiaLogERweb(){ 
+//     let dialog = $('#DL-ER-Web'),
+//     closeDL = $('close-dl-er-web'),
+//     transition;
 
-    $('#alertErrorWeb').on('click', function() {
-        dialog[0].showModal();
-        transition = window.setTimeout(function(){
-            dialog.addClass('show-dialog-scale');
-        }, 0.5);
-    })
+//     $('#alertErrorWeb').on('click', function() {
+//         dialog[0].showModal();
+//         transition = window.setTimeout(function(){
+//             dialog.addClass('show-dialog-scale');
+//         }, 0.5);
+//     })
 
-    $('#close-dl-er-web').on('click', function() {
-        dialog[0].close();
-        closeDL.removeClass('show-dialog-scale');
-        clearTimeout(transition);
-    })
-}
+//     $('#close-dl-er-web').on('click', function() {
+//         dialog[0].close();
+//         closeDL.removeClass('show-dialog-scale');
+//         clearTimeout(transition);
+//     })
+// }
 
-showDiaLogERGit();
-function showDiaLogERGit(){ 
-    let dialog = $('#DL-ER-Git'),
-    closeDL = $('close-dl-er-git'),
-    transition;
+// showDiaLogERGit();
+// function showDiaLogERGit(){ 
+//     let dialog = $('#DL-ER-Git'),
+//     closeDL = $('close-dl-er-git'),
+//     transition;
 
-    $('#alertErrorGit').on('click', function() {
-        dialog[0].showModal();
-        transition = window.setTimeout(function(){
-            dialog.addClass('show-dialog-scale');
-        }, 0.5);
-    })
+//     $('#alertErrorGit').on('click', function() {
+//         dialog[0].showModal();
+//         transition = window.setTimeout(function(){
+//             dialog.addClass('show-dialog-scale');
+//         }, 0.5);
+//     })
 
-    $('#close-dl-er-git').on('click', function() {
-        dialog[0].close();
-        closeDL.removeClass('show-dialog-scale');
-        clearTimeout(transition);
-    })
-}
+//     $('#close-dl-er-git').on('click', function() {
+//         dialog[0].close();
+//         closeDL.removeClass('show-dialog-scale');
+//         clearTimeout(transition);
+//     })
+// }
 
 
 
