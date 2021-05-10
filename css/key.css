@@ -32,7 +32,7 @@
 }
 
 /* dialog key*/
-#close-dialog{ 
+/* #close-dialog{ 
     border: #dc3545 solid 1px;
     border-radius: 5px;
     color: #dc3545;
@@ -56,32 +56,22 @@
     border-radius: 10px;
     padding: 15px 10px;
     z-index: 20;
-}
+} */
 
-.show-dialog-scale{
-    /* transition */
-}
 
-.show-dialog-scale{
-    /* position:relative; */
-    /* left:0px; */
-    /* animation-name:move-top;
-    animation-duration:3s;
-    animation-iteration-count:1; */
-}
 @keyframes move-top{
     0%{top:-1000px;}
     100%{top:8px;}
 }
-.show-dialog-scale h4{
+/* .show-dialog-scale h4{
     border-bottom: black solid 1px;
     padding-bottom: 10px;
     color: #dc3545;
-}
+} */
 
 
 /* show er-web */
-#close-dl-er-web{
+/* #close-dl-er-web{
     border: #dc3545 solid 1px;
     border-radius: 5px;
     color: #dc3545;
@@ -96,10 +86,10 @@
     background-color: #dc3545;
     color: #ffffff;
     transition: ease-in 0.3s;
-}
+} */
 
 /* show er-git */
-#close-dl-er-git{
+/* #close-dl-er-git{
     border: #dc3545 solid 1px;
     border-radius: 5px;
     color: #dc3545;
@@ -110,6 +100,58 @@
 }
 
 #close-dl-er-git:hover{
+    border: #dc3545 solid 1px;
+    background-color: #dc3545;
+    color: #ffffff;
+    transition: ease-in 0.3s;
+} */
+
+
+/* thong bao */
+
+.DlKey{
+    color: black;
+    position: fixed;
+    overflow: auto;/*  cuộn */
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-top : 200px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    
+}
+
+.form-Dl-Key{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    border: red solid 0.2px;
+    border-radius: 12px;
+}
+.form-Dl-Key h4{
+    color: red;
+    border-bottom: red solid 1.5px;
+    padding-bottom: 12px;
+}
+
+.btn-close-dl-k{
+    border: #dc3545 solid 1px;
+    border-radius: 5px;
+    color: #dc3545;
+    width: auto;
+    height: auto;
+    padding: 3px 10px 3px 10px;
+    float:  right;
+    margin-top: -25px;
+}
+
+.btn-close-dl-k:hover{
     border: #dc3545 solid 1px;
     background-color: #dc3545;
     color: #ffffff;
