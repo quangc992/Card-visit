@@ -1,5 +1,8 @@
-
 $(document).ready(function(){
+
+    var status = "Welcome card visit NFC \n ----------------------------- \n Source Web : html/css/js/jquery \n License : Ngô Văn Quang\n Note : Source ibox free";
+    console.log(status);
+
 
     erWeb();
     function erWeb(){

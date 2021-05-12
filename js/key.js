@@ -11,7 +11,9 @@ linkK.hide();
 function loadK(){ // check key
     let inputK = $('#textK').val();
     var inputK2 = $('#textK');
-    let key = "qc";
+    let key = "qc" ;
+    let key2 = "quang" ;
+    let key3 = "quangc" ;
     let hideK = $('#fmKey');
     let textErK = $('#textErK');
 
@@ -19,7 +21,7 @@ function loadK(){ // check key
         textErK.text('');
     })
 
-    if(inputK == key){
+    if(inputK == key || inputK == key2 || inputK == key3 ){
         // alert('OK');
         // $('#textK').hide();
         hideK.hide();

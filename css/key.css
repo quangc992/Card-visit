@@ -214,7 +214,7 @@
     border: #dc3545 solid 1px;
     background-color: #dc3545;
     color: #ffffff;
-    transition: ease 3s;
+    transition: ease 0.3s;
 }
 
 
@@ -270,5 +270,5 @@
     border: #dc3545 solid 1px;
     background-color: #dc3545;
     color: #ffffff;
-    transition: ease 3s;
+    transition: ease 0.3s;
 }
