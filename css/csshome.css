@@ -28,7 +28,9 @@ body{
 }
 
 .color-fb{
-    background-image: linear-gradient(to right, #014058 45%, #827a7c);
+    background-color: #352acd;
+    background-image: linear-gradient(81deg, #352acd 0%, #97D9E1 100%);
+
 }
 
 .color-git{
@@ -36,15 +38,26 @@ body{
 }
 
 .color-gg{
-    background-image: linear-gradient(#eb4132 0%, #f3cf41 66%, #91b8d0 97%);
+    background-color: #f2fb34;
+    background-image: linear-gradient(315deg, #f2fb34 0%, #6284FF 50%, #FF0000 100%);
+
 }
 .color-ins{
     
-    background-image: linear-gradient(#af3048 26%, #c934ad 52%, #ffce51 96%);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 
 .color-phone{
     background-image: linear-gradient(to right, #3a3a3a 50%, #dcd7d8)
+}
+
+.color-gmail{
+    /* background-image: linear-gradient(to right, #1974ec 15%,#ff0000 15%, #f57979 15%,#e9d41e 15%, #11f354 15%); */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
 
 .element-image{
