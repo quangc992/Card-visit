@@ -15,16 +15,32 @@ body{
     border-radius: 65px;
     /* display: inline-block; */
 }
-.main-home{
-    /* background-color: rgb(170, 170, 170); */
-    width: auto;
-    height: auto;
-    margin-left: 13px;
-    margin-right: 13px;
-    padding-bottom: 25px;
 
 
+@media screen and (min-width : 600px){
+    .main-home{
+        /* background-color: rgb(170, 170, 170); */
+        width: auto;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 25px;
     /* text-align: center; */
+    }
+    
+}
+
+@media screen and (min-width : 1000px){
+    .main-home{
+        /* background-color: rgb(170, 170, 170); */
+        width: auto;
+        height: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 25px;
+    /* text-align: center; */
+    }
+    
 }
 
 .color-fb{
@@ -58,6 +74,21 @@ body{
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
+}
+
+.color-vietin{
+    background-color: #352acd;
+    background-image: linear-gradient(81deg, #004e7d 0%, #c41d45 100%);
+}
+
+.color-zalo{
+    background-color: #352acd;
+    background-image: linear-gradient(81deg, #0180c7 0%, white 100%);
+}
+
+.color-momo{
+    background-color: #FF2525;
+    background-image: linear-gradient(147deg, #ae2070 55%, #fdfdfd 99%);
 }
 
 .element-image{
@@ -116,4 +147,52 @@ body{
 
 .element-image div h4{
     color: whitesmoke;
+}
+
+/*text run*/
+
+.text-run{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 8px;
+    position: relative;
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: rgb(197, 233, 39);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation:  animate 5s linear infinite;
+}
+
+
+@media screen and (min-width : 800px){
+    .text-run{
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .text-run{
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+}
+
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgb(236, 41, 41);
+        box-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow:  0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+    }
 }
