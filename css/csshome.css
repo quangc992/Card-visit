@@ -32,8 +32,8 @@ body{
 
 @media screen and (max-width : 600px){
     .main-home{
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     
 }
